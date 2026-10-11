@@ -9,7 +9,7 @@ test('nontracking publisher verification and operator disclosure',()=>{
   assert.ok(html.includes('Andreas Patinas'));
   assert.ok(html.includes('mailto:info@calcfjord.win'));
   assert.ok(html.includes('content="ca-pub-1398772381037303"'));
-  assert.ok(html.includes('https://salary.calcfjord.win'));
+  assert.ok(html.includes('https://calcfjord.win'));
   assert.ok(!html.includes('adsbygoogle.js'));
  }
  assert.equal(readFileSync('dist/ads.txt','utf8'),'google.com, pub-1398772381037303, DIRECT, f08c47fec0942fa0\n');

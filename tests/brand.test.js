@@ -13,6 +13,8 @@ test('CalcFjord assets and accessible shared branding without external font requ
   for(const lang of ['en','da'])assert.match(brandHeader(lang,'Calculator'),/class="brand-name">CalcFjord/);
   const build=await readFile(new URL('../scripts/build.js',import.meta.url),'utf8');
   assert.match(build,/brandHeader\(l,t.name\)/);assert.match(build,/writeBrand\(out\)/);assert.match(build,/href="\/favicon.svg"/);
+  assert.ok(build.includes('https://calcfjord.win'));
+  assert.ok(!build.includes('workdays.calcfjord.win')&&!build.includes('salary.calcfjord.win'));
   const css=await readFile(new URL('../public/style.css',import.meta.url),'utf8');
   assert.doesNotMatch(css,/@import|url\(http|gradient\(/i);assert.match(css,/:focus-visible/);
  }finally{await rm(dir,{recursive:true,force:true})}
