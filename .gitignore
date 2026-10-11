@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.env*
+.wrangler/
+holiday-source.txt
+
+deployment-sources.txt
