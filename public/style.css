@@ -10,3 +10,5 @@ h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{font-siz
 @media(max-width:760px){header,main,footer{padding:20px}.layout,.info{grid-template-columns:1fr;gap:24px}.hero{padding:26px 0 24px}.panel{padding:22px}.brand-name{font-size:27px}.brand-tool{font-size:11px}.info{padding-top:24px}.result{min-height:180px}}
 @media(max-width:380px){header{gap:12px;padding:16px}.brand{gap:8px}.brand-mark{width:30px;height:30px}.brand-name{font-size:24px}.brand-tool{max-width:140px;font-size:10px}header select{font-size:14px;padding:8px;max-width:94px}.fields{grid-template-columns:1fr;gap:14px}.panel{padding:18px}.week span{width:44px}.date-result{font-size:27px}.tabs button{font-size:13px}.breakdown div{flex-direction:column;gap:3px}.number{font-size:66px}}
 @media print{body{background:#fff}header,.ad-slot,.actions,footer,form,.skip-link{display:none}.layout{display:block}.result{color:var(--ink);background:#fff;border:1px solid var(--line)}.result h2,.metrics span,.currency{color:var(--muted)}}
+
+.privacy-settings{display:inline-block;margin-top:.75rem;font-size:.9rem;text-decoration:underline;}
