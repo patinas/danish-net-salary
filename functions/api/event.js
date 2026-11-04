@@ -8,6 +8,6 @@ export async function onRequestPost(context){
   const e=validEvent(body);
   if(!e)return new Response('unknown event',{status:400});
   const d=dayKey();
-  waitUntil(Promise.allSettled([bump(env.STATS,'total:ev:'+e),bump(env.STATS,'ev:'+e+':'+d,120)]));
+  waitUntil(Promise.allSettled([bump(env.STATS,'ev:'+e+':'+d,120)]));
   return new Response(null,{status:204});
 }

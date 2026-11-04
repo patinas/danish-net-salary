@@ -5,7 +5,7 @@ export async function onRequest(context){
   try{
     if(env.STATS&&countPageView(request)){
       const d=dayKey();
-      waitUntil(Promise.allSettled([bump(env.STATS,'total:pv'),bump(env.STATS,'pv:'+d,120)]));
+      waitUntil(Promise.allSettled([bump(env.STATS,'pv:'+d,120)]));
     }
   }catch{}
   return response;
