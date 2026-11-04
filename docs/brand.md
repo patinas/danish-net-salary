@@ -17,7 +17,7 @@ The build writes brand-mark.svg, favicon.svg, logo.svg and social.svg. The mark 
 
 ## Changes
 
-Preserve calculator IDs and logic, EN/DA copy, labelled advertisement areas and consent controls. Do not invent certifications, usage numbers or claims of human authorship. A deliberate identity is a design choice, not proof that no AI was used.
+Preserve calculator IDs and logic, EN/DA copy and consent controls. The empty advertising placeholder was removed 4 November 2026 with owner approval; do not re-add it without a new owner decision. Do not invent certifications, usage numbers or claims of human authorship. A deliberate identity is a design choice, not proof that no AI was used.
 
 ## Verification
 

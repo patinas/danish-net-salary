@@ -14,4 +14,4 @@ Node 20+. `npm run check` runs unit tests then writes `dist/`. Set `SITE_URL` to
 Official live comparator checked 11 October 2026: synthetic salary 30000, rate 38%, monthly deduction 5000, hovedkort. Skat returned net 19012, AM 2400, A-skat 8588, matching our test. This is an interactive comparator, not an officially published worked example. Youth, pension/ATP, invalid input and bikort cases also have tests. Payroll rounding can differ.
 
 ## Ads and contact
-Empty labeled ad space only. A real consent manager and an updated legal notice must precede any optional third-party script. No program enrollment or revenue promise. No public operator contact identity was supplied; do not invent one or publish a private email.
+No advertising code or placeholder (the empty ad space was removed 4 November 2026). A real consent manager and an updated legal notice must precede any optional third-party script. No program enrollment or revenue promise. No public operator contact identity was supplied; do not invent one or publish a private email.
