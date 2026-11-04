@@ -15,3 +15,13 @@ Official live comparator checked 11 October 2026: synthetic salary 30000, rate 3
 
 ## Ads and contact
 No advertising code or placeholder (the empty ad space was removed 4 November 2026). A real consent manager and an updated legal notice must precede any optional third-party script. No program enrollment or revenue promise. No public operator contact identity was supplied; do not invent one or publish a private email.
+
+## Deploy
+
+The Cloudflare Pages project `danish-net-salary` is a **Direct Upload** project: pushing to GitHub does **not** deploy. After `npm run check`, deploy with:
+
+```
+CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... npx wrangler pages deploy dist --project-name danish-net-salary --branch main
+```
+
+Use the Cloudflare API token and account ID already used for the original deploy. Do not switch the project to Git integration without a separate decision.
