@@ -1,7 +1,7 @@
 import {salary} from './salary.js';import {copy} from './i18n.js';
 const l=document.documentElement.lang,t=copy[l],$=id=>document.getElementById(id),fields=['gross','rate','deduction','pension','atp','yearOfBirth','card'];
 function read(){const v={};for(const k of fields){const e=$(k);if(k==='card')v[k]=e.value;else{if(k==='deduction' && $('card').value==='secondary'){v[k]=0;continue}if(e.value.trim()==='')throw new Error('empty');v[k]=Number(e.value)}}return v}
-function track(e){try{fetch('/api/event',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({e})}).catch(()=>{})}catch{}}
+function track(e){try{if(navigator.doNotTrack==='1'||navigator.globalPrivacyControl)return;const i=new Image();i.src='/beacon-'+e+'.svg?x='+Date.now()}catch{}}
 const fmt=v=>new Intl.NumberFormat(l==='da'?'da-DK':'en-GB',{minimumFractionDigits:2,maximumFractionDigits:2}).format(v);
 function clearResult(){ $('result').hidden=true;$('ready').hidden=false;$('error').hidden=true;for(const k of ['gross','employeePension','atp','am','incomeTax','appliedDeduction','taxable'])$('out-'+k).textContent='';}
 $('calculator').addEventListener('input',clearResult);
