@@ -14,7 +14,7 @@ test('nontracking publisher verification and operator disclosure',()=>{
  }
  assert.equal(readFileSync('dist/ads.txt','utf8'),'google.com, pub-1398772381037303, DIRECT, f08c47fec0942fa0\n');
  const headers=readFileSync('dist/_headers','utf8');
- assert.ok(headers.includes('connect-src https://fundingchoicesmessages.google.com;'));
+ assert.ok(headers.includes("connect-src 'self' https://fundingchoicesmessages.google.com;"));
  assert.ok(!headers.includes('googlesyndication'));
  for(const lang of ['en','da']){
   const privacy=readFileSync(`dist/${lang}/privacy/index.html`,'utf8');
