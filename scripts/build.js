@@ -21,6 +21,7 @@ for(const n of ['calculate','example'])await writeFile(new URL('beacon-'+n+'.svg
 console.log('Built static bilingual 2026 tax-card estimate. SITE_URL='+BASE);
 
 await writeFile(new URL('ads.txt',out),'google.com, pub-1398772381037303, DIRECT, f08c47fec0942fa0\n');
+await writeFile(new URL('google8829eb21ceb19451.html',out),'google-site-verification: google8829eb21ceb19451.html\n');
 
 await writeBrand(out);
 
